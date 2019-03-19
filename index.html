@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>MicroCSS</title>
+		<link rel="stylesheet" href="minireset.css" />
+		<link rel="stylesheet" href="microcss.css" />
+		<style>
+			.container {
+				width: 80%;
+				max-width: 1200px;
+				margin: auto;
+			}
+			#grid-sample *[class*=col-]{
+				background: #0074D9;
+				color: #ffffff;
+				border: 1px solid;
+				text-align: center;
+				line-height: 32px;
+				font-size: 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>H1</h1>
+			<h2>H2</h2>
+			<h3>H3</h3>
+			<h4>H4</h4>
+			<h5>H5</h5>
+			<h6>H6</h6>
+			<h4>Buttons:</h4>
+			<p>
+				Una cadena de texto
+			</p>
+			<button>Button</button>
+			<button class="primary">Primary</button>
+			<button class="success">Succes</button>
+			<button class="alert">Alert</button>
+
+			<h4>Form</h4>
+			<div class="row">
+				<div class="col-2">Input:</div>
+				<div class="col-8"><input type="text" /></div>
+			</div>
+			<div class="row">
+				<div class="col-2">Input type number:</div>
+				<div class="col-8"><input type="number" /></div>
+			</div>
+			<textarea>Textarea</textarea>
+			<br /><br />
+			<select>
+				<option>Select with options</option>
+			</select>
+			<br /><br />
+			<input type="submit" value="Send" />
+			<input type="reset" value="Reset" />
+			<h4>Grid</h4>
+			<div id="grid-sample">
+				<div class="row">
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+					<div class="col-1">1</div>
+				</div>
+				<div class="row">
+					<div class="col-2">2</div>
+					<div class="col-2">2</div>
+					<div class="col-2">2</div>
+					<div class="col-2">2</div>
+					<div class="col-2">2</div>
+					<div class="col-2">2</div>
+				</div>
+				<div class="row">
+					<div class="col-3">3</div>
+					<div class="col-3">3</div>
+					<div class="col-3">3</div>
+					<div class="col-3">3</div>
+				</div>
+				<div class="row">
+					<div class="col-4">4</div>
+					<div class="col-4">4</div>
+					<div class="col-4">4</div>
+				</div>
+				<div class="row">
+					<div class="col-5">5</div>
+					<div class="col-5">5</div>
+					<div class="col-2">2</div>
+				</div>
+				<div class="row">
+					<div class="col-6">6</div>
+					<div class="col-6">6</div>
+				</div>
+				<div class="row">
+					<div class="col-7">7</div>
+					<div class="col-3">3</div>
+					<div class="col-2">2</div>
+				</div>
+				<div class="row">
+					<div class="col-8">8</div>
+					<div class="col-4">4</div>
+				</div>
+				<div class="row">
+					<div class="col-9">9</div>
+					<div class="col-3">3</div>
+				</div>
+				<div class="row">
+					<div class="col-10">10</div>
+					<div class="col-2">2</div>
+				</div>
+				<div class="row">
+					<div class="col-11">11</div>
+					<div class="col-1">1</div>
+				</div>
+				<div class="row">
+					<div class="col-12">12</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

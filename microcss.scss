@@ -1,0 +1,128 @@
+// Colors
+$navy:		#001f3f;
+$blue:		#0074D9;
+$aqua:		#7FDBFF;
+$teal:		#39CCCC;
+$olive:		#3D9970;
+$green:		#2ECC40;
+$lime:		#01FF70;
+$yellow:	#FFDC00;
+$orange:	#FF851B;
+$red:		#FF4136;
+$maroon:	#85144b;
+$fuchsia:	#F012BE;
+$purple:	#B10DC9;
+$black:		#111111;
+$gray:		#AAAAAA;
+$silver:	#DDDDDD;
+
+// The grid
+
+$col_size: 100%/12;
+
+.row {
+	width: 90%;
+	max-width: 1140px;
+	&:before,
+	&:after {
+		content:"";
+		display:table;
+		clear:both;
+	}
+
+	@for $i from 1 to 13 {
+		.col-#{$i} { width: $col_size * $i; float: left; }
+	}
+}
+
+.row *[class*=col-]{
+	padding: 5px 0;
+	box-sizing: border-box;
+}
+
+h1 {font-size: 48px; line-height: 58px}
+h2 {font-size: 40px; line-height: 50px}
+h3 {font-size: 32px; line-height: 42px}
+h4 {font-size: 28px; line-height: 38px}
+h5 {font-size: 24px; line-height: 34px}
+h6 {font-size: 20px; line-height: 30px}
+
+/* Forms and buttons */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 150%; /* 1 */
+	margin: 0; /* 2 */
+	-webkit-appearance: none;
+	background: #FFFFFF;
+	padding: 0 3px;
+	color: $black;
+	border: 1px solid $gray;
+	border-radius: 3px;
+	transition: border-color 0.2s ease;
+
+	&:focus {
+		border-color: $aqua;
+	}
+
+	&:disabled {background-color: $silver}
+
+}
+
+select{
+	padding-right: 24px;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTcuNDEsOC41OEwxMiwxMy4xN0wxNi41OSw4LjU4TDE4LDEwTDEyLDE2TDYsMTBMNy40MSw4LjU4WiIgLz48L3N2Zz4=);
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+}
+
+/* Remove the input type number arrows */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+button, a.button {
+	border: 1px solid $gray;
+	border-radius: 3px;
+	line-height: 200%;
+	color: $black;
+	padding: 0 20px;
+}
+
+button.primary, a.button.primary {
+	@extend button;
+	background: $blue;
+	border-color: $blue;
+	color: #fff;
+}
+
+button.success, a.button.success, input[type=submit] {
+	@extend button;
+	background: $green;
+	border-color: $green;
+	color: #fff;
+}
+
+button.alert, a.button.alert, input[type=reset] {
+	@extend button;
+	background: $red;
+	border-color: $red;
+	color: #fff;
+}
+
+@media (max-width: 479px) {
+	.row *[class*=col-]{
+		float: none;
+		width: 100%;
+	}
+}
