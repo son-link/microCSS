@@ -197,11 +197,26 @@ table {
 	width: 100%;
 	border-collapse: collapse;
 	table-layout: fixed;
+	margin: 10px 0;
 
 	td, th {
 		padding: 5px;
 		line-height: 150%;
-		border: 1px solid $silver;
+		border-top: 1px solid $gray;
+		border-bottom: 1px solid $gray;
+	}
+
+	&.strip {
+		tbody tr:nth-of-type(2n+2) {
+			background-color: $silver;
+		}
+	}
+
+	&.bordered {
+		td, th {
+			border: 1px solid $gray;
+			border-bottom: 1px solid $gray;
+		}
 	}
 }
 

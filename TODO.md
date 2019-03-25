@@ -11,7 +11,6 @@
   - [ ] Image
   - [ ] Video
   - [x] Iframe (as YouTube video or Google Maps)
-  - [ ] Tables (basic)
 - [x] Text and backgrounds colors for alerts, buttons and badges, or use on other components (primary, disable, error, warning and info)
 - [ ] Badges
 - [ ] Navbar
@@ -19,3 +18,8 @@
   - [x] Material icons
   - [x] Awesome Font
   - [x] Fontello
+- [ ] Tables:
+  - [x] Basic
+  - [x] Striped
+  - [x] Bordered
+  - [ ] Responsive

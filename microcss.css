@@ -271,12 +271,23 @@ table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+  margin: 10px 0;
 }
 
 table td, table th {
   padding: 5px;
   line-height: 150%;
-  border: 1px solid #DDDDDD;
+  border-top: 1px solid #AAAAAA;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+table.strip tbody tr:nth-of-type(2n+2) {
+  background-color: #DDDDDD;
+}
+
+table.bordered td, table.bordered th {
+  border: 1px solid #AAAAAA;
+  border-bottom: 1px solid #AAAAAA;
 }
 
 @media (max-width: 639px) {
