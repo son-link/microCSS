@@ -16,12 +16,17 @@ $black:		#111111;
 $gray:		#AAAAAA;
 $silver:	#DDDDDD;
 
+html, body {
+	font-size: 16px;
+	line-height: 1;
+}
+
 // The grid
 
 $col_size: 100%/12;
 
 .row {
-	width: 90%;
+	width: 100%;
 	max-width: 1140px;
 	&:before,
 	&:after {
@@ -54,10 +59,10 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: inherit; /* 1 */
-	font-size: 100%; /* 1 */
-	line-height: 150%; /* 1 */
-	margin: 0; /* 2 */
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 150%;
+	margin: 0;
 	-webkit-appearance: none;
 	background: #FFFFFF;
 	padding: 0 3px;
@@ -71,6 +76,11 @@ textarea {
 	}
 
 	&:disabled {background-color: $silver}
+
+	&:invalid {
+		border: 1px solid $red;
+		box-shadow: none;
+	}
 
 }
 
@@ -86,38 +96,125 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     -webkit-appearance: none;
     margin: 0;
 }
- 
-input[type="number"] {
-    -moz-appearance: textfield;
-}
 
-button, a.button {
+/*input[type="number"] {
+    -moz-appearance: textfield;
+}*/
+
+/* Buttons and alerts */
+
+button, a.button, .alert, *[type=submit], *[type=reset] {
 	border: 1px solid $gray;
 	border-radius: 3px;
 	line-height: 200%;
 	color: $black;
-	padding: 0 20px;
+	padding: 0 10px;
+	margin: 5px;
 }
 
-button.primary, a.button.primary {
-	@extend button;
+.alert {margin: 10px 0}
+
+.primary, .success, .danger, .warning, .info, *:disabled{
+	color: #FFFFFF;
+}
+
+.primary {
 	background: $blue;
 	border-color: $blue;
-	color: #fff;
 }
 
-button.success, a.button.success, input[type=submit] {
-	@extend button;
+.success {
 	background: $green;
 	border-color: $green;
-	color: #fff;
 }
 
-button.alert, a.button.alert, input[type=reset] {
-	@extend button;
+.danger {
 	background: $red;
 	border-color: $red;
-	color: #fff;
+}
+
+.warning {
+	background: $orange;
+	border-color: $orange;
+}
+
+.info {
+	background: $aqua;
+	border-color: $aqua;
+}
+
+/* Material Icons */
+.material-icons {
+	display: inline;
+	vertical-align: middle;
+}
+
+/* Responsive iframes for YouTube videos and Google Maps*/
+
+.embed-video, .embed-map {
+	position: relative;
+	width: 100%;
+	padding-bottom:56.25%;
+	max-width: 840px;
+	margin: auto;
+	height: 0;
+	
+	iframe {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+/* Navbar and links */
+
+.navbar {
+	line-height: 50px;
+	border-bottom: 1px solid $black;
+	a, .navbar-title {
+		display: inline-block;
+		margin-right: 5px;
+	}
+
+	.navbar-title {
+		font-weight: bold;
+		font-size: 120%;
+	}
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+	transition: color .5s ease;
+	&:hover {color: $black}
+}
+
+/* Tables */
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+
+	td, th {
+		padding: 5px;
+		line-height: 150%;
+		border: 1px solid $silver;
+	}
+}
+
+@media (max-width: 639px){
+	.navbar {
+		line-height: 1;
+		
+		a, .navbar-title {
+			display: block;
+			margin: 10px 0;
+			width: auto;
+		}
+	}
 }
 
 @media (max-width: 479px) {

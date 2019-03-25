@@ -5,6 +5,10 @@
 		<title>MicroCSS</title>
 		<link rel="stylesheet" href="minireset.css" />
 		<link rel="stylesheet" href="microcss.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="fontello-embedded.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 		<style>
 			.container {
 				width: 80%;
@@ -23,6 +27,14 @@
 	</head>
 	<body>
 		<div class="container">
+			<div class="navbar">
+				<nav>
+					<span class="navbar-title">MicroCSS</span>
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</nav>
+			</div>
 			<h1>H1</h1>
 			<h2>H2</h2>
 			<h3>H3</h3>
@@ -30,13 +42,20 @@
 			<h5>H5</h5>
 			<h6>H6</h6>
 			<h4>Buttons:</h4>
-			<p>
-				Una cadena de texto
-			</p>
 			<button>Button</button>
 			<button class="primary">Primary</button>
 			<button class="success">Succes</button>
-			<button class="alert">Alert</button>
+			<button class="danger">Danger</button>
+			<button class="warning">Warning</button>
+			<button class="info">Info</button>
+			<br />
+
+			<h4>Alerts</h4>
+			<div class="alert primary">Primary</div>
+			<div class="alert success">Succes</div>
+			<div class="alert danger">Danger</div>
+			<div class="alert warning">Warning</div>
+			<div class="alert info">Info</div>
 
 			<h4>Form</h4>
 			<div class="row">
@@ -124,6 +143,59 @@
 					<div class="col-12">12</div>
 				</div>
 			</div>
+			<h4>Texting Material Desing Font</h4>
+			<p>
+				<button><i class="material-icons"> check</i>check</button>
+				Text <i class="material-icons">code</i> other text
+			</p>
+			<h4>Texting Awesome Font</h4>
+			<p>
+				<button><i class="fas fa-check"></i> check</button>
+				Text <i class="fas fa-code"></i> other text
+			</p>
+			<br />
+			<h4>Texting Fontello custom font</h4>
+			<p>
+				<button><i class="icon-ok"></i> check</button>
+				Text <i class="icon-code"></i> other text
+			</p>
+			<br />
+			<h4>Responsive YouTube video</h4>
+			<div class="embed-video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/UQ3bqYKnyhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			</div>
+			<h4>Responsive Google Map</h4>
+			<div class="embed-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24283.348812240674!2d-3.6494235604492182!3d40.46600340000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1553337245947" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<br >
+			<table>
+				<thead>
+					<tr>
+						<th>Singer</th>
+						<th>Group</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Freddie Mercury
+						</td>
+						<td>Queen</td>
+						<td>
+							<i class="material-icons">check</i>
+						</td>
+					</tr>
+					<tr>
+						<td>Kurk Kobain</td>
+						<td>Nirvana</td>
+						<td>
+							<i class="material-icons">check</i>
+						</td>
+					</tr>
+				</tbody>
+				
+			</table>
 		</div>
 	</body>
 </html>
