@@ -13,7 +13,6 @@
 }
 
 #menu {
-	padding: 1rem;
 	position: fixed;
 	background: #FFF;
 	top: 50px;
@@ -51,6 +50,7 @@ footer {
 	#menu.open {
 		max-height: 100%;
 		overflow-y: auto;
+		padding: 1rem;
 	}
 
 	#doc {
