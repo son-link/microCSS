@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MicroCSS</title>
+		<link rel="stylesheet" href="../dist/microcss.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="fontello-embedded.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="navbar fixed">
+			<a id="toggle-menu"><i class="icon-menu"></i></a>
+			<span class="navbar-title">MicroCSS</span>
+			<nav>
+				<a href="index.html">Index</a>
+				<a href="doc.html">Documentation</a>
+			</nav>
+			<nav class="float-right">
+				<a href="https://github.com/son-link/microcss/"><i class="icon-github-circled"></i> Github</a>
+			</nav>
+		</div>
+		<div class="col-2 navbar navbar-vert" id="menu">
+			<nav>
+				<a href="#typography">Typography</a>
+				<a href="#lists">Lists</a>
+				<a href="#buttons">Buttons</a>
+				<a href="#alerts">Alerts</a>
+				<a href="#forms">Forms</a>
+				<a href="#grid">Grid</a>
+				<a href="#tables">Tables</a>
+				<a href="#icons">Icons</a>
+				<a href="#responsive">Responsive</a>
+				<a href="#navigation">Navigation</a>
+				<a href="#blockquote">Blockquote</a>
+				<a href="#code">Code</a>
+				<a href="#utilities">Utilities</a>
+			</nav>
+		</div>
+		<div class="container" id="doc">
+			<a name="typography"></a>
+			<h3>Typography</h3>
+			<p>
+				<h1>Header H1</h1>
+				<h2>Header H2</h2>
+				<h3>Header H3</h3>
+				<h4>Header H4</h4>
+				<h5>Header H5</h5>
+				<h6>Header H6</h6>
+			</p>
+				<a name="lists"></a>
+			<h4>Lists</h4>
+			<p>
+				<ul>
+					<li>Lorem ipsum</li>
+					<li>Lorem ipsum</li>
+					<li>
+						Sublist:
+						<ul>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+						</ul>
+					</li>
+					<li>Lorem ipsum</li>
+				</ul>
+	
+				<ol>
+					<li>Lorem ipsum</li>
+					<li>Lorem ipsum</li>
+					<li>Sublist:
+						<ol>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+						</ol>
+					</li>
+					<li>Lorem ipsum</li>
+				</ol>
+			</p>
+			
+			<a name="buttons"></a>
+			<h4>Buttons:</h4>
+			<p>
+				<button>Button</button>
+				<a class="button">Link</a>
+				<button class="primary">Primary</button>
+				<button class="success">Succes</button>
+				<button class="danger">Danger</button>
+				<button class="warning">Warning</button>
+				<button class="info">Info</button>
+			</p>
+			<pre><code>&ltbutton>Button&lt/button>
+&lta class="button">Primary&lt/a>
+&ltbutton class="primary">Primary&lt/button>
+&ltbutton class="success">Succes&lt/button>
+&ltbutton class="danger">Danger&lt/button>
+&ltbutton class="warning">Warning&lt/button>
+&ltbutton class="info">Info&lt/button></code></pre>
+
+			<a name="alerts"></a>
+			<h4">Alerts:</h4>
+			<p>
+				<div class="alert primary">Primary</div>
+				<div class="alert success">Succes</div>
+				<div class="alert danger">Danger</div>
+				<div class="alert warning">Warning</div>
+				<div class="alert info">Info</div>
+			</p>
+			<pre><code>&ltdiv class="alert primary">Primary &lt/div>
+&ltdiv class="alert success">Succes&lt/div>
+&ltdiv class="alert danger">Danger&lt/div>
+&ltdiv class="alert warning">Warning&lt/div>
+&ltdiv class="alert info">Info&lt/div></code></pre>
+			
+			<a name="forms"></a>
+			<h4>Form</h4>
+			<p>
+				<div class="row">
+					<div class="col-2">Input:</div>
+					<div class="col-8"><input type="text" /></div>
+				</div>
+				<div class="row">
+					<div class="col-2">Input type number:</div>
+					<div class="col-8"><input type="number" /></div>
+				</div>
+				<textarea>Textarea</textarea>
+				<br /><br />
+				<select>
+					<option>Select with options</option>
+				</select>
+				<br /><br />
+				<input type="submit" value="Send" />
+				<input type="reset" value="Reset" />
+			</p>
+			
+			<a name="grid"></a>
+			<h4>Grid</h4>
+			<p>
+				The grid use the flexbox system to make a responsive layout based on 12 colums.<br />
+				Is very simple. Only add class <strong>row</strong> to the parent div and col-&lt;size> for the desirez grid size
+			</p>
+			<p>
+				<pre><code>&ltdiv class="row">
+  &ltdiv class="col-3">col-3&lt/div>
+  &ltdiv class="col-3">col-3&lt/div>
+  &ltdiv class="col-3">col-3&lt/div>
+  &ltdiv class="col-3">col-3&lt/div>
+&lt/div></code></pre>
+			</p>
+				
+			<div id="grid-sample">
+				<div class="row">
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+					<div class="col-1">col-1</div>
+				</div>
+				<div class="row">
+					<div class="col-2">col-2</div>
+					<div class="col-2">col-2</div>
+					<div class="col-2">col-2</div>
+					<div class="col-2">col-2</div>
+					<div class="col-2">col-2</div>
+					<div class="col-2">col-2</div>
+				</div>
+				<div class="row">
+					<div class="col-3">col-3</div>
+					<div class="col-3">col-3</div>
+					<div class="col-3">col-3</div>
+					<div class="col-3">col-3</div>
+				</div>
+				<div class="row">
+					<div class="col-4">col-4</div>
+					<div class="col-4">col-4</div>
+					<div class="col-4">col-4</div>
+				</div>
+				<div class="row">
+					<div class="col-5">col-5</div>
+					<div class="col-5">col-5</div>
+					<div class="col-2">col-2</div>
+				</div>
+				<div class="row">
+					<div class="col-6">col-6</div>
+					<div class="col-6">col-6</div>
+				</div>
+				<div class="row">
+					<div class="col-7">col-7</div>
+					<div class="col-3">col-3</div>
+					<div class="col-2">col-2</div>
+				</div>
+				<div class="row">
+					<div class="col-8">col-8</div>
+					<div class="col-4">col-4</div>
+				</div>
+				<div class="row">
+					<div class="col-9">col-9</div>
+					<div class="col-3">col-3</div>
+				</div>
+				<div class="row">
+					<div class="col-10">col-10</div>
+					<div class="col-2">col-2</div>
+				</div>
+				<div class="row">
+					<div class="col-11">col-11</div>
+					<div class="col-1">col-1</div>
+				</div>
+				<div class="row">
+					<div class="col-12">col-12</div>
+				</div>
+			</div>
+
+			<a name="tables"></a>
+			<h4>Tables:</h4>
+			<h5>Normal table</h5>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Singer</th>
+						<th>Group</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Freddie Mercury
+						</td>
+						<td>Queen</td>
+					</tr>
+					<tr>
+						<td>Kurk Cobain</td>
+						<td>Nirvana</td>
+					</tr>
+					<tr>
+						<td>John Lennon</td>
+						<td>Beatles</td>
+					</tr>
+					<tr>
+						<td>Jon Bon Jovi</td>
+						<td>Bon Jovi</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h5>Striped table</h5>
+			<p>Just add class <strong>strip</strong> to the table</p>
+				<table class="strip">
+				<thead>
+					<tr>
+						<th>Singer</th>
+						<th>Group</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Freddie Mercury
+						</td>
+						<td>Queen</td>
+					</tr>
+					<tr>
+						<td>Kurk Cobain</td>
+						<td>Nirvana</td>
+					</tr>
+					<tr>
+						<td>John Lennon</td>
+						<td>Beatles</td>
+					</tr>
+					<tr>
+						<td>Jon Bon Jovi</td>
+						<td>Bon Jovi</td>
+					</tr>
+				</tbody>
+			</table>
+	
+			<h4>Table Bordered</h4>
+			<p>Just add class <strong>bordered</strong> to the table</p>
+			<table class="bordered">
+				<thead>
+					<tr>
+						<th>Singer</th>
+						<th>Group</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Freddie Mercury
+						</td>
+						<td>Queen</td>
+					</tr>
+					<tr>
+						<td>Kurk Cobain</td>
+						<td>Nirvana</td>
+					</tr>
+					<tr>
+						<td>John Lennon</td>
+						<td>Beatles</td>
+					</tr>
+					<tr>
+						<td>Jon Bon Jovi</td>
+						<td>Bon Jovi</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4>Responsive Tables</h4>
+			<p>
+				Yo can make your tables responsive. Firts add the class <strong>responsive</strong> and in all &lt;td> add the propertie <strong>data-title</strong> with data title. Example:<br />
+				<pre><code>&lt;table class="responsive">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>Singer&lt;/th>
+      &lt;th>Group&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td data-title="Singer">Freddie Mercury&lt;/td>
+      &lt;td data-title="Group">Queen&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+     &lt;td data-title="Singer">Kurk Cobain&lt;/td>
+     &lt;td data-title="Group">Nirvana&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td data-title="Singer">John Lennon&lt;/td>
+      &lt;td data-title="Group">Beatles&lt;/td>
+      &lt;/tr>
+    &lt;tr>
+      &lt;td data-title="Singer">Jon Bon Jovi&lt;/td>
+      &lt;td data-title="Group">Bon Jovi&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+			</p>
+			<p>Reduce window size for view the result</p>
+			<table class="responsive">
+				<thead>
+					<tr>
+						<th>Singer</th>
+						<th>Group</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-title="Singer">
+							Freddie Mercury
+						</td>
+						<td data-title="Group">Queen</td>
+					</tr>
+					<tr>
+						<td data-title="Singer">Kurk Cobain</td>
+						<td data-title="Group">Nirvana</td>
+					</tr>
+					<tr>
+						<td data-title="Singer">John Lennon</td>
+						<td data-title="Group">Beatles</td>
+					</tr>
+					<tr>
+						<td data-title="Singer">Jon Bon Jovi</td>
+						<td data-title="Group">Bon Jovi</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<a name="icons"></a>
+			<h4>Icons</h4>
+			<p>
+				You can use your favorite font icon. I tested with <a href="https://material.io/tools/icons/?style=baseline" target="_blank">Google Material Icons</a>, <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and custom font make with <a href="https://fontello.com/" target="_blank">Fontello</a>
+			</p>
+			<h5>Material Icons</h5>
+			<p>
+				<pre><code>&lt;button>&lt;i class="material-icons">check&lt;/i>check&lt;/button>
+Text &lt;i class="material-icons">code&lt;/i> other text</code></pre>
+			</p>
+			<p>
+				<button><i class="material-icons">check</i>check</button>
+				Text <i class="material-icons">code</i> other text
+			</p>
+			<h5>Font Awesome</h5>
+			<p>
+				<pre><code>&lt;button>&lt;i class="fas fa-check">&lt;/i>check&lt;/button>
+Text &lt;i class="fas fa-code">&lt;/i> other text</code></pre>
+			</p>
+			<p>
+				<button><i class="fas fa-check"></i> check</button>
+				Text <i class="fas fa-code"></i> other text
+			</p>
+
+			<h5>Fontello</h5>
+			<p>
+				<pre><code>&lt;button>&lt;i class="icon-ok">&lt;/i>check&lt;/button>
+Text &lt;i class="icon-code">&lt;/i> other text</code></pre>
+			</p>
+
+			<p>
+				<button><i class="icon-ok"></i> check</button>
+				Text <i class="icon-code"></i> other text
+			</p>
+				
+			<a name="responsive"></a>
+			<h4>Responsive Elements</h4>
+			<p>
+				MicroCSS include rules for make images, videos and audio elements responsives, and one utility for turn iframes responsives, for example, iframes for YouTube video, Google Maps, etc.
+			</p>
+			<pre><code>&lt;div class="resp-iframe">
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/UQ3bqYKnyhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div></code></pre>
+
+			<h5>YouTube</h5>
+			<div class="resp-iframe">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/UQ3bqYKnyhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<h5>Responsive Google Map</h5>
+			<div class="resp-iframe">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24283.348812240674!2d-3.6494235604492182!3d40.46600340000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1553337245947" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<h5>My blog</h5>
+			<div class="resp-iframe">
+				<iframe src="https://son-link.github.io" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+				
+			<a name="navigation"></a>
+			<h4>Navigation</h4>
+			<p>
+				MicroCSS include some class for make navigation bars.
+			</p>
+			<h5>Horizontal nav</h5>
+			<pre><code>&lt;div class="navbar">
+  &lt;nav>
+    &lt;span class="navbar-title">MicroCSS&lt;/span>
+    &lt;a href="#">Link 1&lt;/a>
+    &lt;a href="#">Link 2&lt;/a>
+    &lt;a href="#">Link 3&lt;/a>
+  &lt;/nav>
+&lt;/div></code></pre>
+			<div class="navbar">
+				<nav>
+					<span class="navbar-title">MicroCSS</span>
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</nav>
+			</div>
+
+			<h5>Vertical Navigation Bar</h5>
+			<pre><code>&lt;div class="navbar">
+  &lt;nav>
+    &lt;span class="navbar-title navbar-vert">MicroCSS&lt;/span>
+    &lt;a href="#">Link 1&lt;/a>
+    &lt;a href="#">Link 2&lt;/a>
+    &lt;a href="#">Link 3&lt;/a>
+  &lt;/nav>
+&lt;/div></code></pre>
+			<div class="navbar navbar-vert">
+				<nav>
+					<span class="navbar-title">MicroCSS</span>
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</nav>
+			</div>
+				
+			<h5>Fixed</h5>
+			<pre><code>&lt;div class="navbar">
+  &lt;nav>
+    &lt;span class="navbar-title fixed">MicroCSS&lt;/span>
+    &lt;a href="#">Link 1&lt;/a>
+    &lt;a href="#">Link 2&lt;/a>
+    &lt;a href="#">Link 3&lt;/a>
+  &lt;/nav>
+&lt;/div></code></pre>
+			<p>
+				The main menu of these page is a example.
+			</p>
+
+			<a name="blockquote"></a>
+			<h4>Blockquote</h4>
+			<pre><code>&lt;blockquote>
+  This is a blockquote.
+&lt;/blockquote></code></pre>
+			<blockquote>
+				This is a blockquote.
+			</blockquote>
+
+			<a name="code"></a>
+			<h4>Code</h4>
+			<pre><code>&lt;pre>&lt;code>body
+{
+  font-size: 16px;
+  color: #212121;
+}&lt;/code>&lt;/code></code></pre>
+
+			<a name="utilities"></a>
+			<h4>Utilities</h4>
+			<p>
+				MicroCSS include some functional classes:
+				<ul>
+					<li>text-left: Aling text to left</li>
+					<li>text-center: Centered text</li>
+					<li>text-left: Aling text to right</li>
+					<li>float-left: Add float-left to element</li>
+					<li>float-right: Add float-right to element</li>
+				</ul>
+			</p>
+		</div>
+		<footer>
+			MicroCSS make by <a href="https://github.com/son-link/microcss/">Alfonso Saavedra "Son Link"</a>. Source Code under the GPLv3 or newer license.
+		</footer>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>

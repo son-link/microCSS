@@ -1,25 +1,25 @@
 # TODO list
 - [x] Simple grid
-- [ ] Typography
-- [ ] Form
+- [x] Typography
+- [x] Form
   - [x] Blur
-  - [ ] Valid
   - [x] Invalid
   - [x] Select
 - [x] Buttons
 - [ ] Responsive elemets:
-  - [ ] Image
-  - [ ] Video
+  - [x] Image
+  - [x] Video
   - [x] Iframe (as YouTube video or Google Maps)
+  - [x] Audio
 - [x] Text and backgrounds colors for alerts, buttons and badges, or use on other components (primary, disable, error, warning and info)
-- [ ] Badges
-- [ ] Navbar
+- [x] Navbar
 - [x] Font icons
   - [x] Material icons
   - [x] Awesome Font
   - [x] Fontello
-- [ ] Tables:
+- [x] Tables:
   - [x] Basic
   - [x] Striped
   - [x] Bordered
-  - [ ] Responsive
+  - [x] Responsive
+- [x] Blockquote

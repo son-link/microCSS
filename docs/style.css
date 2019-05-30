@@ -1,0 +1,61 @@
+.container {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto 20px;
+}
+#grid-sample *[class*=col-]{
+	background: #0074D9;
+	color: #ffffff;
+	border: 1px solid;
+	text-align: center;
+	line-height: 32px;
+	font-size: 24px;
+}
+
+#menu {
+	padding: 1rem;
+	position: fixed;
+	background: #FFF;
+	top: 50px;
+}
+
+#toggle-menu {
+	display: none;
+	font-size: 120%;
+}
+
+#doc {
+	margin-left: 17%;
+}
+
+footer {
+	padding: 1rem 2rem;
+	text-align: center;
+}
+
+@media (max-width: 679px){
+	#toggle-menu, .navbar-title {
+		display: inline-block !important;
+	}
+
+	#menu {
+		width: 100%;
+		z-index: 666;
+		height: auto;
+		max-height: 0;
+		overflow-y: hidden;
+		transition: all .3s ease-in;
+		display: block;
+	}
+
+	#menu.open {
+		max-height: 100%;
+		overflow-y: auto;
+	}
+
+	#doc {
+		margin: auto;
+		width: 90%;
+		float: none;
+	}
+}
