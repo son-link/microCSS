@@ -8,7 +8,7 @@ MicroCSS is a ready to use Lightweight Responsive CSS Framework and not required
 
 * Ready to use. Only download and include on your pages.</li>
 * Responsive and movile-friendly.</li>
-* Lightweight. > 3Kb minified and gzipped.</li>
+* Lightweight. < 3Kb minified and gzipped.</li>
 * Write using SASS and include the 16 colors <a href="http://clrs.cc/" target="_blank">Clrs</a> palette. You can change the colors of many elemets or the entire palette.</li>
 * Compatible with some icon fonts as [Google Material Icons](https://material.io/tools/icons/?style=baseline), [Font Awesome](https://fontawesome.com) and custom font make with [Fontello](https://fontello.com/)
 
