@@ -1,10 +1,15 @@
 # MicroCSS
-A lightweight CSS framework
 
-MicroCSS is a ready to use lightweight pure CSS framework, wihtout any JavaScript code.
+Lightweight Responsive CSS Framework
 
-MicroCSS use [minireset.css](https://github.com/jgthms/minireset.css) for CSS reset and write with SASS/SCSS.
+MicroCSS is a ready to use Lightweight Responsive CSS Framework and not required any Javascript. MicroCSS is designed so that you can have a website ready in a short time, with a clean code and that you can modify and expand according to your needs. Also includes some classes to facilitate some tasks.
 
-Under the GNU/GPL v3 or newer license. minireset.css is under the MIT license.
+### Features
 
-Work in progress. You can see the progress in TODO.md file.
+* Ready to use. Only download and include on your pages.</li>
+* Responsive and movile-friendly.</li>
+* Lightweight. > 3Kb minified and gzipped.</li>
+* Write using SASS and include the 16 colors <a href="http://clrs.cc/" target="_blank">Clrs</a> palette. You can change the colors of many elemets or the entire palette.</li>
+* Compatible with some icon fonts as [Google Material Icons](https://material.io/tools/icons/?style=baseline), [Font Awesome](https://fontawesome.com) and custom font make with [Fontello](https://fontello.com/)
+
+MicroCSS is under the GNU/GPLv3 or newer license.
