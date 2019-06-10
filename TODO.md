@@ -6,7 +6,7 @@
   - [x] Invalid
   - [x] Select
 - [x] Buttons
-- [ ] Responsive elemets:
+- [ ] Responsive elements:
   - [x] Image
   - [x] Video
   - [x] Iframe (as YouTube video or Google Maps)
