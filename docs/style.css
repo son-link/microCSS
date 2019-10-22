@@ -32,6 +32,22 @@ footer {
 	text-align: center;
 }
 
+#form-row {
+	margin-bottom: 1rem;
+}
+
+#form-row label {
+	line-height: 1.5rem;
+}
+
+#icon-repo {
+	font-size: 1.2rem;
+}
+
+#download {
+	margin-bottom: 1rem;
+}
+
 @media (max-width: 679px){
 	#toggle-menu, .navbar-title {
 		display: inline-block !important;

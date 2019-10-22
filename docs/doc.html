@@ -20,7 +20,9 @@
 				<a href="doc.html">Documentation</a>
 			</nav>
 			<nav class="float-right">
-				<a href="https://github.com/son-link/microcss/"><i class="icon-github-circled"></i> Github</a>
+				<a href="https://github.com/son-link/microcss/" target="_blank" id="icon-repo">
+					<i class="icon-github-circled"></i>
+				</a>
 			</nav>
 		</div>
 		<div class="col-2 navbar navbar-vert" id="menu">
@@ -37,6 +39,7 @@
 				<a href="#navigation">Navigation</a>
 				<a href="#blockquote">Blockquote</a>
 				<a href="#code">Code</a>
+				<a href="#cards">Cards</a>
 				<a href="#utilities">Utilities</a>
 			</nav>
 		</div>
@@ -102,7 +105,7 @@
 &ltbutton class="info">Info&lt/button></code></pre>
 
 			<a name="alerts"></a>
-			<h4">Alerts:</h4>
+			<h4>Alerts:</h4>
 			<p>
 				<div class="alert primary">Primary</div>
 				<div class="alert success">Succes</div>
@@ -119,20 +122,26 @@
 			<a name="forms"></a>
 			<h4>Form</h4>
 			<p>
-				<div class="row">
-					<div class="col-2">Input:</div>
-					<div class="col-8"><input type="text" /></div>
-				</div>
-				<div class="row">
-					<div class="col-2">Input type number:</div>
-					<div class="col-8"><input type="number" /></div>
-				</div>
+				<label>Input</label>
+				<input type="text" placeholder="placeholder" />
 				<textarea>Textarea</textarea>
-				<br /><br />
 				<select>
 					<option>Select with options</option>
 				</select>
-				<br /><br />
+				<input type="checkbox" value="Send" /> Checkbox<br />
+				<input type="radio" name="ck" value="Send" /> Radio
+				<input type="radio" name="ck" value="Send" /> Radio 2<br />
+				<legend>Input inside of a row</legend>
+				<div id="form-row">
+					<div class="row">
+						<div class="col-2"><label>Input:</label></div>
+						<div class="col-4"><input type="text" /></div>
+					</div>
+					<div class="row">
+						<div class="col-2"><label>Input type number:</label></div>
+						<div class="col-4"><input type="number" /></div>
+					</div>
+				</div>
 				<input type="submit" value="Send" />
 				<input type="reset" value="Reset" />
 			</p>
@@ -416,14 +425,17 @@ Text &lt;i class="icon-code">&lt;/i> other text</code></pre>
 			<p>
 				MicroCSS include rules for make images, videos and audio elements responsives, and one utility for turn iframes responsives, for example, iframes for YouTube video, Google Maps, etc.
 			</p>
-			<pre><code>&lt;div class="resp-iframe">
-  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/UQ3bqYKnyhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
-&lt;/div></code></pre>
+			<h5>Image</h5>
+			<img src="code-coding-css-92905.jpg" /><br /><br />
 
 			<h5>YouTube</h5>
 			<div class="resp-iframe">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/UQ3bqYKnyhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
+
+			<pre><code>&lt;div class="resp-iframe">
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/UQ3bqYKnyhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div></code></pre>
 			<h5>Responsive Google Map</h5>
 			<div class="resp-iframe">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24283.348812240674!2d-3.6494235604492182!3d40.46600340000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1553337245947" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -432,6 +444,9 @@ Text &lt;i class="icon-code">&lt;/i> other text</code></pre>
 			<div class="resp-iframe">
 				<iframe src="https://son-link.github.io" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
+
+			<h5>Video</h5>
+			<video src="video.mp4" controls></video>
 				
 			<a name="navigation"></a>
 			<h4>Navigation</h4>
@@ -503,6 +518,31 @@ Text &lt;i class="icon-code">&lt;/i> other text</code></pre>
   font-size: 16px;
   color: #212121;
 }&lt;/code>&lt;/code></code></pre>
+
+			<a name="cards"></a>
+			<h4>Cards</h4>
+			<div class="card col-6">
+				<div class="card-title">Card Title</div>
+				<div class="card-body">
+					<p>
+						This is a card.
+					</p>
+				</div>
+				<div class="card-footer">
+					<button>GO</button>
+				</div>
+			</div>
+			<pre><code>&lt;div class="card">
+  &lt;div class="card-title">Card Title&lt;/div>
+    &lt;div class="card-body">
+      &lt;p>
+        This is a card.
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="card-footer">
+      &lt;button>GO&lt;/button>
+  &lt;/div>
+&lt;/div></code></pre>
 
 			<a name="utilities"></a>
 			<h4>Utilities</h4>
